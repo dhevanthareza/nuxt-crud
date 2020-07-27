@@ -1,6 +1,6 @@
 const config = {
   production: {
-    gateway: 'http://localhost:4000/',
+    gateway: 'http://178.128.127.145:4000/',
   },
   local: {
     gateway: 'http://localhost:4000/',
