@@ -1,6 +1,6 @@
 const config = {
   production: {
-    gateway: 'hhttps://lb-crud.herokuapp.com/',
+    gateway: 'https://lb-crud.herokuapp.com/',
   },
   local: {
     gateway: 'http://localhost:4000/',
