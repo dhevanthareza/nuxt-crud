@@ -155,6 +155,7 @@ export default {
         if ('id' in this.detail) {
           await request.put(`/representatives/${this.detail.id}`, {
             name: this.detail.name,
+            SalesAreaId: this.detail.SalesAreaId,
           })
           this.$store.commit('showMessage', {
             type: 'success',

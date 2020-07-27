@@ -144,13 +144,13 @@ export default {
           })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil update Role',
+            message: 'Berhasil update provinsi',
           })
         } else {
           await request.post('/provinces', { ...this.detail })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil Menambahkan Role',
+            message: 'Berhasil Menambahkan provinsi',
           })
         }
         this.detail = {}

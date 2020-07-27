@@ -155,17 +155,18 @@ export default {
         if ('id' in this.detail) {
           await request.put(`/cities/${this.detail.id}`, {
             name: this.detail.name,
+            ProvinceId: this.detail.ProvinceId,
           })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil update User',
+            message: 'Berhasil update Kota',
           })
           this.detail = false
         } else {
           await request.post('/cities', { ...this.detail })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil Menambahkan User',
+            message: 'Berhasil Menambahkan Kota',
           })
           this.detail = false
         }

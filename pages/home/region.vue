@@ -144,13 +144,13 @@ export default {
           })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil update Role',
+            message: 'Berhasil update region',
           })
         } else {
           await request.post('/regions', { ...this.detail })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil Menambahkan Region',
+            message: 'Berhasil Menambahkan region',
           })
         }
         this.loadingSave = false

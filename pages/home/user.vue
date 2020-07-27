@@ -155,6 +155,7 @@ export default {
         if ('id' in this.detail) {
           await request.put(`/users/${this.detail.id}`, {
             name: this.detail.name,
+            RoleId: this.detail.RoleId,
           })
           this.$store.commit('showMessage', {
             type: 'success',

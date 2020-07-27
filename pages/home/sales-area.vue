@@ -155,17 +155,18 @@ export default {
         if ('id' in this.detail) {
           await request.put(`/sales-areas/${this.detail.id}`, {
             name: this.detail.name,
+            RegionId: this.detail.RegionId,
           })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil update User',
+            message: 'Berhasil update Sales Area',
           })
           this.detail = false
         } else {
           await request.post('/sales-areas', { ...this.detail })
           this.$store.commit('showMessage', {
             type: 'success',
-            message: 'Berhasil Menambahkan User',
+            message: 'Berhasil Menambahkan Sales Area',
           })
           this.detail = false
         }
